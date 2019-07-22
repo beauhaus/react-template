@@ -1,0 +1,2 @@
+# react-template
+parcel, prettier
