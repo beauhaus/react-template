@@ -1,0 +1,23 @@
+{
+  "name": "react-template",
+  "version": "1.0.0",
+  "description": "react starter with tooling",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier src/**/* .{js, html} --write"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beauhaus/react-template.git"
+  },
+  "author": "beau jackson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/beauhaus/react-template/issues"
+  },
+  "homepage": "https://github.com/beauhaus/react-template#readme",
+  "devDependencies": {
+    "prettier": "^1.18.2"
+  }
+}
