@@ -83,7 +83,7 @@ body {
   margin: 0;
   text-overflow: ellipsis;
 }
-
+/* 
 header > a,
 #root > div > h1 {
   display: inline-block;
@@ -92,7 +92,7 @@ header > a,
   height: 76px;
   overflow: hidden;
   text-indent: -9999px;
-}
+} */
 
 .pet h2 {
   white-space: nowrap;
