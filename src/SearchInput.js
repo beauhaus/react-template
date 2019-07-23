@@ -13,17 +13,18 @@ const SearchInput = () => {
   const [searchTerm, setSearchTerm] = useState("bread");
   return (
     <StyledSearchForm>
-      <form></form>
-      <label htmlFor="searchTerm">
-        searchTerm
-        <input
-          id="searchTerm"
-          value={searchTerm}
-          placeholder={searchTerm}
-          onChange={e => setSearchTerm(e.target.value)}
-        />
-      </label>
-      <button>Search</button>
+      <form>
+        <label htmlFor="searchTerm">
+          searchTerm
+          <input
+            id="searchTerm"
+            value={searchTerm}
+            placeholder={searchTerm}
+            onChange={e => setSearchTerm(e.target.value)}
+          />
+        </label>
+        <button>Search</button>
+      </form>
     </StyledSearchForm>
   );
 };
