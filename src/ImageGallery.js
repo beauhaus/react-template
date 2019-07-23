@@ -9,16 +9,35 @@ const StyledGallery = styled.div`
   height: 100%;
 `;
 const ImageGallery = () => {
-  // console.log("imgFeed: ", imageFeed);
-  // const searchTerm = "bread";
-  // const imageFeed = imageFeed.
+  const [toggleGallery, setToggleGallery] = useState(false);
+  const toggle=()=> {
+    
+    setToggleGallery(toggleGallery? false: true)
+  }
   return (
     <StyledGallery>
-      {imageFeed.map((photo, idx) => (
-        <Card key={idx} photo={photo} />
-      ))}
+    <button onClick={toggle}>toggle: {toggleGallery.toString()}</button>
+      {toggleGallery?
+        imageFeed.map((photo, idx) => (
+          <Card key={idx} photo={photo} />
+        )):
+        ""
+      }
     </StyledGallery>
   );
 };
 
 export default ImageGallery;
+
+/*
+
+export default function Toggle(props) {
+  const [toggleState, setToggleState] = useState("off");
+
+  function toggle() {
+    setToggleState(toggleState === "off" ? "on" : "off");
+  }
+
+  return <div className={`switch ${toggleState}`} onClick={toggle} />;
+}
+*/
