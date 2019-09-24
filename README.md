@@ -18,3 +18,4 @@ lint/format from package.json
     "lint": "eslint \"**/*.{js,jsx}\" --quiet"
 ...
 ```
+test
